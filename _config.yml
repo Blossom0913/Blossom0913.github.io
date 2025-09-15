@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xutian Chen"
-description              : "🌱 I'm currently learning : Computer Vision，reinforcement learning"
+description              : "🌱 I'm currently learning : Computer Vision, Reinforcement Learning"
 repository               : "Blossom0913/Blossom0913.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Xutian Chen"
   avatar           : "images/head_icon.jpg"
-  bio              : "Beihang University"
+  bio              : "Machine Learning"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
@@ -43,9 +43,9 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "https://www.linkedin.com/in/%E6%97%AD%E5%A4%A9-%E9%99%88-b73586354/" # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  orcid            : "https://orcid.org/my-orcid?orcid=0009-0001-7817-9691" # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
