@@ -102,5 +102,10 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 
 *Currently preparing manuscripts for submission. Feel free to reach out for collaboration opportunities!*
 
-# 💬 Invited Talks
+# � Reference
+> Remember brick walls let us show our dedication. They are there to separate us from the people who don't really want to achieve their childhood dreams. 
+>
+> ——Randy Pausch's last lecture
+
+# �💬 Invited Talks
 *Coming soon...*
