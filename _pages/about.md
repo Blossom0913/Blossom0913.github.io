@@ -46,39 +46,52 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 
 # 💼 Working Experience
 
-## Algorithm Intern | Guangdong Institute of Intelligent Science and Technology
+## Decision & Planning Intern | 美团 无人车业务部
+*2026.03 - 2026.10 | Beijing, China*
+
+- Improved rule-based planning and refined trajectory feasibility checks for intersection exit decisions
+- Built data pipelines and Jenkins workflows to establish a daily quantitative expert data loop for model and rule evaluation
+- Collaborated on sim-to-real alignment and debugging, producing reusable evaluation and traceability processes
+
+## Research Experience
+
+### Research Intern | Guangdong Institute of Intelligent Science and Technology
 *2025.02 - 2025.09 | Zhuhai, China*
 
-- 🏆 Applied for **2 software copyright certificates** as Top-3 co-author:
+- Applied for **2 software copyright certificates** as Top-3 co-author:
   - Logistics warehouse multi-intelligent robot path planning system
   - Lightweight tool platform based on point task management and billing tracking
-- 🔬 Designed experiment framework for mouse social behavior classification using **DeepLabCut** to label body coordination and **LightGBM** compared with LSTM, CNN, GMM model performance
-- 💊 Completed **43.8 million small molecules docking experiment**, a large-scale computing task in drug development. Designed parallel framework and deployed on **4 RTX 2080Ti** GPUs
-- 📝 Source code available at: [Dock Repository](https://github.com/Blossom0913)
+- Designed experiment framework for mouse social behavior classification using **DeepLabCut** to label body coordination and **LightGBM** compared with LSTM, CNN, GMM model performance
+- Completed **43.8 million small molecules docking experiment**, a large-scale computing task in drug development. Designed parallel framework and deployed on **4 RTX 2080Ti** GPUs
+- Source code available at: [Dock Repository](https://github.com/Blossom0913)
+
+### Multi-agent Path Planning
+*2024.03 - 2024.07 | Research Assistant | Zhuhai, China*
+
+- Software developer in research group, designed and implemented message interaction models for information communication between AGV platform and local server
+- Reproduced the baseline of **CL-CBS**, a multi-agent path planning algorithm designed by APRIL Lab of Zhejiang University
+- Modified and applied algorithm to simulation AGV platform: [CL-MAPF: Multi-Agent Path Finding for Car-Like Robots with Kinematic and Spatiotemporal Constraints](https://github.com/Blossom0913)
+- Investigated and analyzed feasibility of CL-CBS in real business scenarios, achieving **5x speed improvement** over original algorithms like Hybrid A* in a 3-month period
 
 # 🎖 Honors and Awards
 - **2022.06**: 🥈 **National Second Prize** in ASC2022 (Student Supercomputer Challenge), ranked **22nd** among all participants
 - **2022.07**: Attended the ASC final as visitors at USTC
+- **2024**: 🥇 **Provincial First Prize** (preliminary) in Chinese Mathematics Competition (CMC), Guangdong Division
+- **2023**: 🥈 **Provincial Second Prize** (preliminary) in Chinese Mathematics Competition (CMC), Guangdong Division
 
 # 🚀 Projects
+
+# 竞赛经历
 
 ## ASC2022 Student Supercomputer Challenge
 *2021.11 - 2022.06 | Team Member | Zhuhai, China*
 
-- 🏆 **National Second Prize** in ASC 2022, ranked **22nd** among all participants
-- 🎯 Focused on **DeepMD-Kit** and **High Performance Computing (HPC)**
-- ⚡ Optimized benchmarks by parallelizing computation with **CUDA, MPI, OpenMP** and other tools
-- 📈 Achieved **11% performance optimization**
-- 🖥️ Assisted in configuring remote servers, running environment preparations and data visualization
-- 📄 Detailed work documented in: [ASC Student Supercomputer Challenge Proposal](https://github.com/Blossom0913)
-
-## Multi-agent Path Planning
-*2024.03 - 2024.07 | Research Assistant | Zhuhai, China*
-
-- 💻 Software developer in research group, designed and implemented **message interaction models** for information communication between AGV platform and local server
-- 🔄 Reproduced the baseline of **CL-CBS**, a multi-agent path planning algorithm designed by APRIL Lab of Zhejiang University
-- 🤖 Modified and applied algorithm to simulation AGV platform: [CL-MAPF: Multi-Agent Path Finding for Car-Like Robots with Kinematic and Spatiotemporal Constraints](https://github.com/Blossom0913)
-- 🚀 Investigated and analyzed feasibility of CL-CBS in real business scenarios, achieving **5x speed improvement** over original algorithms like Hybrid A* in 3-month period
+- **Project goal**: Under limited compute (8× Tesla V100 16GB) and power constraints, pre-train a 4.7B-parameter Yuan-1.0 language model and achieve a **55% training speedup** (from 45h to 28h).
+- **Memory optimization**: Led application of **ZeRO-Offload** and **ZeRO Stage 1** to offload model states (parameters, gradients, optimizer states) to CPU memory, enabling training of a 4.7B model on 8×16GB GPUs and resolving CUDA OOM issues.
+- **Parallel & acceleration strategy**: Deployed **Megatron-DeepSpeed** and designed a hybrid parallel scheme with **4-way tensor parallelism + 2-way pipeline parallelism**, improving throughput from **4.08 → 4.66 samples/s** compared with pure 8-way tensor parallelism.
+- **Engineering optimizations**: Adopted mixed precision training (AMP), built PyTorch with Intel MKL, and used DeepSpeed's CPU Adam to optimize CPU offload computation and communication.
+- **Convergence tuning**: Tuned learning rate scaling and warmup strategies alongside data pipelines and micro-batching, achieving a final training loss of **5.826** in reproduction runs.
+- **Deliverables**: Responsible for parallel strategy evaluation, memory/performance analysis, and engineering implementation; project notes and partial experiment logs at: [ASC Student Supercomputer Challenge Proposal](https://github.com/Blossom0913)
 
 ## Open-Source Contributions
 
@@ -90,6 +103,13 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 - 🎨 Designed **UI/UX** with ViewPage2, TabLayout and Fragment independently
 - 📝 Source code: [Blossom0913/PlayTask](https://github.com/Blossom0913/PlayTask)
 
+## Tiny-llm
+*2026.04 -- 2026.06*
+
+- Focused on Attention implementation and lightweight LLM training/inference pipelines
+- Tech stack: vLLM, SGLang, Tool Calling
+- Reference: [https://github.com/skyzh/tiny-llm](https://github.com/skyzh/tiny-llm)
+
 # 💻 Technical Skills
 
 ## Programming Languages
@@ -99,16 +119,14 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 ## Technical Skills
 - **Development Tools**: Git, SSH, Android Studio
 - **High Performance Computing**: CUDA, MPI, OpenMP
+- **Distributed Training & Optimization**: DeepSpeed, Megatron, ZeRO, ZeRO-Offload
+- **Precision & Acceleration**: Mixed Precision (AMP), Intel MKL optimizations
 - **Machine Learning**: TensorFlow, PyTorch, Fine-Tuning
-- **Systems**: Linux, Shell, Lisp
-- **Other**: Algorithm Design, Multi-Agent Systems, Computer Vision
+- **Systems**: Linux, Shell
+- **Other**: Algorithm Design, Multi-Agent Systems, Computer Vision, Model Inference & Deployment
 
 # 📝 Publications 
 
 *Currently preparing manuscripts for submission. Feel free to reach out for collaboration opportunities!*
 
 
-
-
-# �💬 Invited Talks
-*Coming soon...*
