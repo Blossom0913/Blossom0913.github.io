@@ -19,9 +19,9 @@ redirect_from:
 
 # 👋 About Me
 
-Hello! I'm **Xutian Chen**, a passionate researcher and engineer in the field of Artificial Intelligence and Machine Learning. I am currently pursuing my Master's degree in Artificial Intelligence at [Beihang University](https://www.buaa.edu.cn/), having graduated with a Bachelor's degree in Artificial Intelligence from [Jinan University](https://www.jnu.edu.cn/). 
+Hello! I'm **Xutian Chen**, a passionate student and researcher in the field of Artificial Intelligence and Machine Learning. I am currently pursuing my Master's degree in Artificial Intelligence at [Beihang University](https://www.buaa.edu.cn/), having graduated with a Bachelor's degree in Artificial Intelligence from [Jinan University](https://www.jnu.edu.cn/). 
 
-My research interests lie in the intersection of **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Multi-Agent Path Planning**. I have extensive experience in algorithm development and engineering practice with proficiency in multiple programming languages and cutting-edge technologies.
+My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusion Models**, **LLM Inference Acceleration**, and **Autonomous Vehicle Path Planning**. I am always open to appropriate opportunities in research and tech industries, and I am excited about how GenAI can be applied to revolutionize specific problems in any domain.
 
 📧 **Contact**: [chenxutian@buaa.edu.cn](mailto:chenxutian@buaa.edu.cn)  
 🔗 **GitHub**: [github.com/Blossom0913](https://github.com/Blossom0913)  
