@@ -34,6 +34,10 @@ chenxutian@buaa.edu.cn | [github.com/Blossom0913](https://github.com/Blossom0913
 - vLLM，SGLang
 - Tool Calling
 
+**PlayTask** | [github.com/Blossom0913/PlayTask](https://github.com/Blossom0913/PlayTask)
+- 独立设计并开发的时间管理 APP，完成完整的 Android Studio 开发流程与 UI/UX 设计
+- 技术栈：Android, Kotlin, Java
+
 ---
 
 ## 竞赛经历
@@ -64,7 +68,7 @@ chenxutian@buaa.edu.cn | [github.com/Blossom0913](https://github.com/Blossom0913
 
 ## 技能
 
-**编程语言：** Python, C/C++
+**编程语言：** Python, C/C++, Java, Rust, Kotlin
 
 **技术技能：** PyTorch, TensorFlow, DeepSpeed, Megatron, CUDA, Git, SSH, Linux
 

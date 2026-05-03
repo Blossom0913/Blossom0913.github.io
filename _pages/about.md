@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋 About Me
 
-Hello! I'm **Xutian Chen**, a passionate researcher and engineer in the field of Artificial Intelligence and Machine Learning. I am currently pursuing my Master's degree in Electronic Information at [Beihang University](https://www.buaa.edu.cn/), having graduated with a Bachelor's degree in Artificial Intelligence from [Jinan University](https://www.jnu.edu.cn/). 
+Hello! I'm **Xutian Chen**, a passionate researcher and engineer in the field of Artificial Intelligence and Machine Learning. I am currently pursuing my Master's degree in Artificial Intelligence at [Beihang University](https://www.buaa.edu.cn/), having graduated with a Bachelor's degree in Artificial Intelligence from [Jinan University](https://www.jnu.edu.cn/). 
 
 My research interests lie in the intersection of **Machine Learning**, **Deep Learning**, **Computer Vision**, and **Multi-Agent Path Planning**. I have extensive experience in algorithm development and engineering practice with proficiency in multiple programming languages and cutting-edge technologies.
 
@@ -28,55 +28,66 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 🔗 **Gitee**: [gitee.com/chenxutian](https://gitee.com/chenxutian)
 
 
-> Remember brick walls let us show our dedication. They are there to separate us from the people who don't really want to achieve their childhood dreams. 
->
->                               ——Randy Pausch's last lecture
+<blockquote style="border-left: 4px solid #ccc; padding-left: 15px; font-style: italic; color: #555;">
+    <p>
+        Remember brick walls let us show our dedication. They are there to separate us from the people who don't really want to achieve their childhood dreams.
+    </p>
+    <footer style="font-size: 0.85em; color: #888; text-align: right; margin-top: 10px;">
+        &mdash; Randy Pausch's Last Lecture
+    </footer>
+</blockquote>
 
-# 🌱 Currently Learning
-- **Generative AI**: Large language models, diffusion models, and multimodal generation
-- **Reinforcement Learning**: Deep RL, policy optimization, and multi-agent RL
-- **Model Inference Acceleration**: vLLM, TensorRT, quantization, and efficient serving
 
-# 🔥 News
-- *2025.09*: &nbsp;🎉🎉 Started Master's program at Beihang University!
-- *2025.09*: &nbsp;📢📢 Completed algorithm internship at Guangdong Institute of Intelligent Science and Technology.
-- *2025.07*: &nbsp;🎓🎓 Graduated with Bachelor's degree in Artificial Intelligence from Jinan University.
 
 # 📖 Education
-- **2025.09 - Present**: Master of Engineering in **Electronic Information**, [Beihang University](https://www.buaa.edu.cn/), Beijing, China
+- **2025.09 - Present**: Master of Engineering in **Artificial Intelligence**, [Beihang University](https://www.buaa.edu.cn/), Beijing, China
   - **Major Courses**: Machine Learning, Deep Learning, Computer Vision and 15 others
   
 - **2021.09 - 2025.07**: Bachelor of Engineering in **Artificial Intelligence**, [Jinan University](https://www.jnu.edu.cn/), Zhuhai, China
   - **A+ Courses**: Computer Network, Data Structure, Advanced Programming Language and 15 others
 
-# 💼 Working Experience
+# 💼 Internship
 
-## Decision & Planning Intern | Meituan Autonomous Vehicle Business Unit
-*2026.03 - 2026.10 | Beijing, China*
+## Decision & Planning Intern |Meituan Autonomous Vehicle Department
+*2026.03 - present | Beijing, China*
 
 - Improved rule-based planning and refined trajectory feasibility checks for intersection exit decisions
 - Built data pipelines and Jenkins workflows to establish a daily quantitative expert data loop for model and rule evaluation
 - Collaborated on sim-to-real alignment and debugging, producing reusable evaluation and traceability processes
 
-## Research Experience
+# 🚀 Competition Experience
 
-### Research Intern | Guangdong Institute of Intelligent Science and Technology
-*2025.02 - 2025.09 | Zhuhai, China*
+## ASC2022 Student Supercomputer Challenge
+*Team Member | 2021.11 - 2022.06 | Zhuhai, China*
 
-- Applied for **2 software copyright certificates** as Top-3 co-author:
-  - Logistics warehouse multi-intelligent robot path planning system
-  - Lightweight tool platform based on point task management and billing tracking
-- Designed experiment framework for mouse social behavior classification using **DeepLabCut** to label body coordination and **LightGBM** compared with LSTM, CNN, GMM model performance
-- Completed **43.8 million small molecules docking experiment**, a large-scale computing task in drug development. Designed parallel framework and deployed on **4 RTX 2080Ti** GPUs
+- **Project goal**: Under limited compute (8× Tesla V100 16GB) and power constraints, pre-train a 4.7B-parameter Yuan-1.0 language model and achieve a **55% training speedup** (from 45h to 28h).
+- **Memory optimization**: Led application of **ZeRO-Offload** and **ZeRO Stage 1** to offload model states (parameters, gradients, optimizer states) to CPU memory, enabling training of a 4.7B model on 8×16GB GPUs and resolving CUDA OOM issues.
+- **Parallel & acceleration strategy**: Deployed **Megatron-DeepSpeed** and designed a hybrid parallel scheme with **4-way tensor parallelism + 2-way pipeline parallelism**, improving throughput from **4.08 → 4.66 samples/s** compared with pure 8-way tensor parallelism.
+- **Engineering optimizations**: Adopted mixed precision training (AMP), built PyTorch with Intel MKL, and used DeepSpeed's CPU Adam to optimize CPU offload computation and communication.
+- **Convergence tuning**: Tuned learning rate scaling and warmup strategies alongside data pipelines and micro-batching, achieving a final training loss of **5.826** in reproduction runs.
+- **Deliverables**: Responsible for parallel strategy evaluation, memory/performance analysis, and engineering implementation; project notes and partial experiment logs at: [ASC Student Supercomputer Challenge Proposal](https://github.com/Blossom0913/ASC2022)
+
+# 🔬 Research Experience
+
+## Research on AI4S and AI+Chem | Guangdong Institute of Intelligent Science and Technology
+*Research Intern | 2025.02 - 2025.09 | Zhuhai, China*
+
+- Large-Scale Computational Framework: Engineered a parallel computing framework deployed on a 4-GPU (RTX 2080Ti) cluster, successfully processing 43.8 million molecular docking tasks to accelerate drug discovery pipelines.
+- Algorithm Research & Benchmarking: Designed a mouse social behavior classification framework using DeepLabCut for keypoint labeling; conducted comparative experiments on LightGBM, LSTM, CNN, and GMM models to evaluate performance.
+- System Development: Contributed to the development of a multi-robot path planning system and a lightweight task management platform, resulting in 2 software copyright registrations (Top-3 Author).
+- Technical Stack: Python, Deep Learning, Parallel Computing, CUDA, Robotics Simulation.
 - Source code available at: [Dock Repository](https://github.com/Blossom0913)
 
-### Multi-agent Path Planning
-*2024.03 - 2024.07 | Research Assistant | Zhuhai, China*
+## Multi-agent Path Planning | Jinan University
+*Research Assistant | 2024.03 - 2024.07 | Zhuhai, China*
 
-- Software developer in research group, designed and implemented message interaction models for information communication between AGV platform and local server
-- Reproduced the baseline of **CL-CBS**, a multi-agent path planning algorithm designed by APRIL Lab of Zhejiang University
-- Modified and applied algorithm to simulation AGV platform: [CL-MAPF: Multi-Agent Path Finding for Car-Like Robots with Kinematic and Spatiotemporal Constraints](https://github.com/Blossom0913)
-- Investigated and analyzed feasibility of CL-CBS in real business scenarios, achieving **5x speed improvement** over original algorithms like Hybrid A* in a 3-month period
+- **Performance Analysis**: Designed controlled experiments scaling agents from 10 to 50, revealing that runtime increased 135x (2.3s → 312s) and success rate dropped to 67%. Profiling identified conflict detection (70% of runtime) and deep copy operations as primary bottlenecks.
+
+- **Algorithm Optimization (C++/MAPF)**: Reduced conflict detection complexity from O(n²) to O(n) by implementing incremental checks—comparing only the current agent against others instead of full scans. Reduced memory overhead by replacing deep copies with Copy-on-Write, enabling multiple agents to share conflict tree nodes until a write is required.
+
+- **Systems Thinking**: Applied knowledge of stack/heap allocation and shallow/deep copy semantics to guide optimization decisions. Derived complexity reduction (N² → N) and presented findings with clear problem-solution-impact narrative—demonstrating interpretability in engineering work.
+
+- **Platform Integration**: Built messaging architecture between AGV fleet and local server for state synchronization under real-world constraints. Reproduced CL-CBS baseline (paper: [CL-MAPF](https://arxiv.org/abs/2011.00441)), fixed implementation bugs, and delivered faster planning than Hybrid A* baseline within a 3-month cycle.
 
 # 🎖 Honors and Awards
 - **2022.06**: 🥈 **National Second Prize** in ASC2022 (Student Supercomputer Challenge), ranked **22nd** among all participants
@@ -84,36 +95,28 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 - **2024**: 🥇 **Provincial First Prize** (preliminary) in Chinese Mathematics Competition (CMC), Guangdong Division
 - **2023**: 🥈 **Provincial Second Prize** (preliminary) in Chinese Mathematics Competition (CMC), Guangdong Division
 
-# 🚀 Projects
 
-## Competition Experience
 
-## ASC2022 Student Supercomputer Challenge
-*2021.11 - 2022.06 | Team Member | Zhuhai, China*
 
-- **Project goal**: Under limited compute (8× Tesla V100 16GB) and power constraints, pre-train a 4.7B-parameter Yuan-1.0 language model and achieve a **55% training speedup** (from 45h to 28h).
-- **Memory optimization**: Led application of **ZeRO-Offload** and **ZeRO Stage 1** to offload model states (parameters, gradients, optimizer states) to CPU memory, enabling training of a 4.7B model on 8×16GB GPUs and resolving CUDA OOM issues.
-- **Parallel & acceleration strategy**: Deployed **Megatron-DeepSpeed** and designed a hybrid parallel scheme with **4-way tensor parallelism + 2-way pipeline parallelism**, improving throughput from **4.08 → 4.66 samples/s** compared with pure 8-way tensor parallelism.
-- **Engineering optimizations**: Adopted mixed precision training (AMP), built PyTorch with Intel MKL, and used DeepSpeed's CPU Adam to optimize CPU offload computation and communication.
-- **Convergence tuning**: Tuned learning rate scaling and warmup strategies alongside data pipelines and micro-batching, achieving a final training loss of **5.826** in reproduction runs.
-- **Deliverables**: Responsible for parallel strategy evaluation, memory/performance analysis, and engineering implementation; project notes and partial experiment logs at: [ASC Student Supercomputer Challenge Proposal](https://github.com/Blossom0913)
+# 🌐 Open-Source Contributions
 
-## Open-Source Contributions
 
-### PlayTask - Time Management APP
-*Personal Project*
+## Tiny-llm
+*2026.04 -- present*
+
+- Focused on Attention implementation and lightweight LLM training/inference pipelines
+- Tech stack: vLLM, SGLang, Tool Calling
+- Reference: [https://github.com/skyzh/tiny-llm](https://github.com/skyzh/tiny-llm)
+
+## PlayTask - Time Management APP
+*2023.09 -- 2023.12 | Personal Project*
 
 - 📱 Designed and built a time management APP from scratch
 - 🛠️ Learned **Version Control Systems (VCS)**, **Event Response** and basic debugging tools in Android Studio
 - 🎨 Designed **UI/UX** with ViewPage2, TabLayout and Fragment independently
 - 📝 Source code: [Blossom0913/PlayTask](https://github.com/Blossom0913/PlayTask)
 
-## Tiny-llm
-*2026.04 -- 2026.06*
 
-- Focused on Attention implementation and lightweight LLM training/inference pipelines
-- Tech stack: vLLM, SGLang, Tool Calling
-- Reference: [https://github.com/skyzh/tiny-llm](https://github.com/skyzh/tiny-llm)
 
 # 💻 Technical Skills
 
