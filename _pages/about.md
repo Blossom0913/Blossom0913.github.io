@@ -32,6 +32,11 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 >
 >                               ——Randy Pausch's last lecture
 
+# 🌱 Currently Learning
+- **Generative AI**: Large language models, diffusion models, and multimodal generation
+- **Reinforcement Learning**: Deep RL, policy optimization, and multi-agent RL
+- **Model Inference Acceleration**: vLLM, TensorRT, quantization, and efficient serving
+
 # 🔥 News
 - *2025.09*: &nbsp;🎉🎉 Started Master's program at Beihang University!
 - *2025.09*: &nbsp;📢📢 Completed algorithm internship at Guangdong Institute of Intelligent Science and Technology.
@@ -46,7 +51,7 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 
 # 💼 Working Experience
 
-## Decision & Planning Intern | 美团 无人车业务部
+## Decision & Planning Intern | Meituan Autonomous Vehicle Business Unit
 *2026.03 - 2026.10 | Beijing, China*
 
 - Improved rule-based planning and refined trajectory feasibility checks for intersection exit decisions
@@ -81,7 +86,7 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 
 # 🚀 Projects
 
-# 竞赛经历
+## Competition Experience
 
 ## ASC2022 Student Supercomputer Challenge
 *2021.11 - 2022.06 | Team Member | Zhuhai, China*
