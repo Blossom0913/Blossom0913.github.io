@@ -30,7 +30,7 @@ My research interests lie in the intersection of **Machine Learning**, **Deep Le
 
 > Remember brick walls let us show our dedication. They are there to separate us from the people who don't really want to achieve their childhood dreams. 
 >
-> ——Randy Pausch's last lecture
+>                               ——Randy Pausch's last lecture
 
 # 🔥 News
 - *2025.09*: &nbsp;🎉🎉 Started Master's program at Beihang University!
