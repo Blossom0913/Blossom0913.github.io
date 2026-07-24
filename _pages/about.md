@@ -41,19 +41,19 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 
 # 📖 Education
 - **2025.09 - Present**: Master of Engineering in **Artificial Intelligence**, [Beihang University](https://www.buaa.edu.cn/), Beijing, China
-  - **Major Courses**: Machine Learning, Deep Learning, Computer Vision and 15 others
+  - **Major Courses**: Reinforcement Learning, Deep Learning, Multi-Robot Swarm Intelligence, Algorithm Design and Analysis
   
 - **2021.09 - 2025.07**: Bachelor of Engineering in **Artificial Intelligence**, [Jinan University](https://www.jnu.edu.cn/), Zhuhai, China
-  - **A+ Courses**: Computer Network, Data Structure, Advanced Programming Language and 15 others
+  - **Major Courses**: Natural Language Processing, Machine Learning, Principles of Artificial Intelligence, Agile Software Development
 
 # 💼 Internship
 
-## Decision & Planning Intern |Meituan Autonomous Vehicle Department
+## Decision & Planning Intern | Meituan Autonomous Vehicle Department
 *2026.03 - present | Beijing, China*
 
-- Improved rule-based planning and refined trajectory feasibility checks for intersection exit decisions
-- Built data pipelines and Jenkins workflows to establish a daily quantitative expert data loop for model and rule evaluation
-- Collaborated on sim-to-real alignment and debugging, producing reusable evaluation and traceability processes
+- Optimized the interaction decision-making algorithm for intersection driving scenarios: deepened the exit-lane judgment logic, refined the corresponding rule functions, introduced an ego-vehicle steering-completion indicator, and designed a saturated linear-interpolation scheme for dynamic boundary computation, validated through simulation regression for algorithm consistency; also performed performance profiling and code optimization for the intersection reference-line generation module.
+- Fixed and rebuilt the intersection data closed-loop pipeline: diagnosed and resolved issues in the daily human-driving data collection pipeline (Jenkins workflow), including upstream data gaps and Protobuf compilation conflicts; backfilled historical missing human-driving intersection data; built a parallel daily collection pipeline for autonomous-driving intersection data following the existing framework, producing full left-turn/right-turn datasets with dedicated data cleaning and filtering logic.
+- Investigated and validated end-to-end model training: completed feature export, data re-processing, and training-pipeline integration for the intersection decoder model, adapted it to the upstream encoder, and verified the training scripts, laying the data and pipeline foundation for future iterations of the intersection exit-lane selection model.
 
 # 🚀 Competition Experience
 
@@ -72,11 +72,9 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 ## Research on AI4S and AI+Chem | Guangdong Institute of Intelligent Science and Technology
 *Research Intern | 2025.02 - 2025.09 | Zhuhai, China*
 
-- Large-Scale Computational Framework: Engineered a parallel computing framework deployed on a 4-GPU (RTX 2080Ti) cluster, successfully processing 43.8 million molecular docking tasks to accelerate drug discovery pipelines.
-- Algorithm Research & Benchmarking: Designed a mouse social behavior classification framework using DeepLabCut for keypoint labeling; conducted comparative experiments on LightGBM, LSTM, CNN, and GMM models to evaluate performance.
+- Large-Scale Computational Framework: Engineered a parallel computing framework deployed on a 4-GPU (RTX 2080Ti) cluster, successfully processing 43.8 million molecular docking tasks to accelerate drug discovery pipelines. Source code: [Dock Repository](https://github.com/Blossom0913/Dock).
+- Algorithm Research & Benchmarking: Designed an experimental framework and benchmark dataset for rat social and aggressive behavior classification, using DeepLabCut for keypoint labeling; conducted comparative experiments on LightGBM, LSTM, CNN, and GMM models to evaluate performance. Project code: [Mouse-Behavior-Classifier-Train](https://blossom0913.github.io/Mouse-Behavior-Classifier-Train/). This work was published as **co-first author** in *Scientific Data*: ["A Benchmark Dataset for Rat Social and Aggressive Behavior Classification"](https://doi.org/10.1038/s41597-026-07888-8).
 - System Development: Contributed to the development of a multi-robot path planning system and a lightweight task management platform, resulting in 2 software copyright registrations (Top-3 Author).
-- Technical Stack: Python, Deep Learning, Parallel Computing, CUDA, Robotics Simulation.
-- Source code available at: [Dock Repository](https://github.com/Blossom0913)
 
 ## Multi-agent Path Planning | Jinan University
 *Research Assistant | 2024.03 - 2024.07 | Zhuhai, China*
@@ -135,6 +133,8 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 
 # 📝 Publications 
 
-*Currently preparing manuscripts for submission. Feel free to reach out for collaboration opportunities!*
+- **Xutian Chen**\*, Guangyu Li\*, Zihan Zhang\*, Mingkun Xu, Zuoren Wang, Qianqian Shi. "[A Benchmark Dataset for Rat Social and Aggressive Behavior Classification](https://doi.org/10.1038/s41597-026-07888-8)." *Scientific Data*, 2026. (\*Co-first authors)
+
+*More manuscripts are in preparation. Feel free to reach out for collaboration opportunities!*
 
 
