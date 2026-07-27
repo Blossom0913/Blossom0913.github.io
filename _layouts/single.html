@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="blog-post">
+  {% if page.title %}
+    <h1 class="page__title blog-post__title">{{ page.title }}</h1>
+  {% endif %}
+
+  <p class="page__meta blog-post__meta">
+    {% if page.date %}
+      <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>
+      <span class="page__meta-sep">发布于</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%m月%d日" }}</time>
+    {% endif %}
+    {% if page.read_time %}
+      <span class="page__meta-sep">·</span>
+      <i class="fas fa-fw fa-clock" aria-hidden="true"></i>
+      {% assign words = content | strip_html | number_of_words %}
+      {% if words < 400 %}
+        阅读时间约 1 分钟
+      {% else %}
+        阅读时间约 {{ words | divided_by: 400 | plus: 1 }} 分钟
+      {% endif %}
+    {% endif %}
+    {% if page.categories and page.categories.size > 0 %}
+      <span class="page__meta-sep">·</span>
+      <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i>
+      {% for cat in page.categories %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {% endif %}
+  </p>
+
+  <div class="blog-post__content" itemprop="text">
+    {{ content }}
+  </div>
+
+  {% if page.tags and page.tags.size > 0 %}
+    <p class="page__taxonomy blog-post__tags">
+      <i class="fas fa-fw fa-tags" aria-hidden="true"></i>
+      {% for tag_word in page.tags %}
+        <span class="page__taxonomy-item">{{ tag_word }}</span>{% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  <nav class="pagination blog-post__nav">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager">&laquo; {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{ page.next.url | relative_url }}" class="pagination--pager">{{ page.next.title }} &raquo;</a>
+    {% endif %}
+  </nav>
+
+  <p class="blog-post__back">
+    <a href="{{ '/blog/' | relative_url }}"><i class="fas fa-fw fa-arrow-left" aria-hidden="true"></i> 返回博客列表</a>
+  </p>
+</div>

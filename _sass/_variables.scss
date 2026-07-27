@@ -14,11 +14,11 @@ $indent-var                 : 0.5em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
+$sans-serif                 : "Trebuchet MS", Helvetica, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans SC", sans-serif;
 // $sans-serif                 : Georgia, serif, sans-serif;
 
 // $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$monospace                  : Monaco, Consolas, "Lucida Console", "Sarasa Mono SC", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;

@@ -126,6 +126,17 @@ defaults:
     values:
       layout: default
       author_profile: true
+  # _posts (Blog)
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: false
 
 
 # Sass/SCSS
@@ -135,7 +146,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:year/:month/:day/:title/
 timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

@@ -118,6 +118,138 @@
   }
 }
 
+/*
+   Blog post
+   ========================================================================== */
+
+.blog-post {
+  .blog-post__title {
+    margin-top: 0.2em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .blog-post__meta {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  .page__meta-sep {
+    margin: 0 0.35em;
+  }
+
+  .blog-post__content {
+    font-size: 1em;
+    line-height: 1.75;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.6em;
+      margin-bottom: 0.6em;
+    }
+
+    h2 {
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid $border-color;
+    }
+
+    p, li {
+      font-size: 1em;
+      line-height: 1.85;
+    }
+
+    /* responsive images inside blog content */
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1.5em auto;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+    }
+
+    /* figure captions, e.g. ![caption](url) rendered by kramdown */
+    p > img:only-child {
+      margin-bottom: 0.5em;
+    }
+
+    blockquote {
+      margin: 1.5em 0;
+      padding-left: 1.25rem;
+      border-left: 4px solid $border-color;
+      color: $gray;
+      font-style: italic;
+    }
+
+    table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+
+  .blog-post__tags {
+    margin-top: 2em;
+  }
+
+  .blog-post__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid $border-color;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .blog-post__back {
+    margin-top: 1em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+/* MathJax display formulas: allow horizontal scroll on small screens */
+.MathJax_Display,
+.MJXc-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/*
+   Blog list (entries-list)
+   ========================================================================== */
+
+.entries-list {
+  margin-top: 1em;
+
+  .list__item {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;

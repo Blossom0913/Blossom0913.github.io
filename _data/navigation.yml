@@ -10,13 +10,16 @@ main:
     url: "/#-education"
 
   - title: "Experience"
-    url: "/#-working-experience"
+    url: "/#-experience"
 
   - title: "Projects"
     url: "/#-projects"
 
   - title: "Skills"
-    url: "/#-technical-skills"
+    url: "/#-skills"
+
+  - title: "Blog"
+    url: "/blog/"
 
   - title: "CV"
     url: "/cv/"

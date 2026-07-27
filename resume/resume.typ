@@ -1,20 +1,29 @@
-#show heading: set text(font: ("PingFang SC", "Noto Sans CJK SC"))
-#set text(font: ("PingFang SC", "Noto Sans CJK SC"))
+// 参考 https://github.com/JinBridger/chicv-cn 模板进行排版与中文字体适配
+// 标题优先使用西文衬线体 Linux Biolinum O 搭配中文衬线体 Noto Serif CJK SC；
+// 若当前系统未安装上述字体，则回退到 PingFang SC / Noto Sans CJK SC，保证中文不缺字。
+#show heading: set text(font: ("Linux Biolinum O", "Noto Serif CJK SC", "PingFang SC", "Noto Sans CJK SC"))
+#set text(font: ("Noto Serif CJK SC", "PingFang SC", "Noto Sans CJK SC"), lang: "zh")
+
+// 统一给链接加下划线，与模板保持一致
+#show link: underline
 
 // Uncomment the following lines to adjust the size of text
 // The recommend resume text size is from `10pt` to `12pt`
-// #set text(
-//   size: 12pt,
-// )
+#set text(
+  size: 10pt,
+)
 
 // Feel free to change the margin below to best fit your own CV
 #set page(
-  margin: (x: 0.9cm, y: 1.1cm),
+  margin: (x: 0.9cm, y: 1cm),
 )
 
 // For more customizable options, please refer to official reference: https://typst.app/docs/reference/
 
-#set par(justify: true)
+#set par(justify: true, leading: 0.65em, spacing: 1em)
+
+// 栏目标题的上下间距
+#show heading: set block(above: 0.9em, below: 0.55em)
 
 #let chiline() = {v(-3pt); line(length: 100%); v(-5pt)}
 
@@ -42,8 +51,6 @@ chenxutian\@buaa.edu.cn |
 
 #link("https://www.meituan.com/")[*美团 无人车业务部*] #h(1fr) 2026/3 -- 至今 \
 实习生 - 决策规划算法 #h(1fr) 北京，中国 \
-
-
 - 优化自动驾驶路口交互决策算法，深入理解路口出口道判断逻辑，改进相关规则函数，引入自车转向完成度指标，设计基于带饱和的线性插值的动态边界计算方案，并通过仿真回归验证算法一致性；同期完成路口参考线生成模块的性能分析与代码优化。
 
 - 修复与建设路口数据闭环 Pipeline ，排查并修复路口人驾数据 daily 采集 Pipeline（Jenkins Workflow），定位上游数据缺失、Proto 编译冲突等故障；补齐历史断档人驾路口数据；参照已有框架搭建路口自驾数据 daily 采集 Pipeline，制作路口左转、右转自驾全量数据集，完成数据清洗与过滤逻辑设计。
@@ -59,18 +66,13 @@ chenxutian\@buaa.edu.cn |
 // - vllm，SGLang
 // - Tool Calling
 
-
-
-
-
-
 == 科研经历
 #chiline()
 
 #link("https://www.gdiist.cn/research/team_detail/84")[*广东省智能科学与技术研究院*] #h(1fr) 2025/2 -- 2025/9 \
 实习生 #h(1fr) 珠海，中国 \
 - 作为前三作者，研究成果已申请2项软件著作权：#link("https://gitee.com/chenxutian/imagebed/blob/master/Software%20Copyrights/物流仓库多智能体机器人路径规划系统%20软著证书.pdf")[*物流仓库多智能体机器人路径规划系统*] 与 #link("https://gitee.com/chenxutian/imagebed/blob/master/Software%20Copyrights/基于积分任务管理与账单追踪的轻量化工具平台%20软著证书.pdf")[*基于积分任务管理与账单追踪的轻量化工具平台*]。
-- 设计大鼠社会与攻击性行为分类的实验框架与基准数据集，使用 #link("https://github.com/DeepLabCut/DeepLabCut")[*DeepLabCut*] 标注身体关键点协同，并以 #link("https://github.com/microsoft/LightGBM")[*LightGBM*] 对比 LSTM、CNN、GMM 等模型的性能；项目代码：#link("https://blossom0913.github.io/Mouse-Behavior-Classifier-Train/")[*DLC_train*]；研究成果以共同第一作者身份发表于 *Scientific Data*：#link("https://doi.org/10.1038/s41597-026-07888-8")[*A Benchmark Dataset for Rat Social and Aggressive Behavior Classification*]。
+- 设计大鼠社会与攻击性行为分类的实验框架与基准数据集，使用 #link("https://github.com/DeepLabCut/DeepLabCut")[*DeepLabCut*] 标注身体关键点协同，并以 #link("https://github.com/microsoft/LightGBM")[*LightGBM*] 对比 LSTM、CNN、GMM 等模型的性能；项目代码：#link("https://blossom0913.github.io/Mouse-Behavior-Classifier-Train/")[*DLC_train*]；研究成果以共同第一作者身份发表于 *Scientific Data*（详见"论文发表"）。
 - 使用AutoDock Tools处理受体蛋白靶点，完成约 430 万个小分子的分子对接（Docking）实验，为药物研发的大规模计算任务，通过结合能和状态筛选药物分子；设计并行框架并在 4 块 RTX 2080Ti 上部署，源代码：#link("https://github.com/Blossom0913/Dock")[*Dock*]。
 
 *多智能体路径规划* #h(1fr) 2024/3 -- 2024/7 \
@@ -79,6 +81,11 @@ chenxutian\@buaa.edu.cn |
 - 搭建批量实验与结果分析脚本，实现实例自动求解、视频生成、超时跳过、CSV 汇总及性能曲线绘制，用于 CL-CBS 与 Standard CBS 对比评估。
 - 基于 profiling 定位算法瓶颈，分析 Spatiotemporal Hybrid-State A\* 的关键优化机制，包括三重启发、解析终端扩展、时空状态建模与代价惩罚设计。
 
+== 论文发表
+#chiline()
+
++ *Xutian Chen*#super[\*], Guangyu Li#super[\*], Zihan Zhang#super[\*], Mingkun Xu, Zuoren Wang, Qianqian Shi. #link("https://doi.org/10.1038/s41597-026-07888-8")[*A Benchmark Dataset for Rat Social and Aggressive Behavior Classification*]. #emph[Scientific Data], 2026. #super[\*]共同第一作者 (Co-first authors).
+
 == 竞赛经历
 #chiline()
 *ASC2022* #h(1fr) 2021/11 -- 2022/6 \
@@ -86,7 +93,6 @@ chenxutian\@buaa.edu.cn |
 - 项目目标：在有限算力（8× Tesla V100 16GB）和功耗约束下，完成 47 亿参数“源1.0”大语言模型的预训练，并实现 55% 的训练加速（从 45h 降至 28h）。
 - 内存优化：主导应用  *`ZeRO-Offload 与 ZeRO Stage 1`* 技术，成功将 75.2GB 的模型状态（参数、梯度、优化器状态）卸载至CPU内存，在仅 8×16GB 显存上跑通 47 亿参数模型，解决了 CUDA OOM 瓶颈。
 - 训练加速：部署 *`Megatron-DeepSpeed`* 框架，设计并实施 4路张量并行 + 2路流水线并行 的策略，相较单纯8路张量并行，将训练吞吐从 4.08 samples/s 提升至 4.66 samples/s。引入混合精度训练 *` (AMP) `* ，在 NVIDIA Tensor Core 上利用 FP16 算术加速计算，并解决精度溢出问题。用 Intel MKL 数学库编译 PyTorch，并将其与针对CPU卸载优化的 DeepSpeed CPU Adam 优化器结合，显著加速了 CPU 端的优化器计算步骤。
-
 
 == 获奖经历
 #chiline()
