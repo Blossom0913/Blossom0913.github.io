@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Xutian Chen"
-  avatar           : "images/head_icon.jpg"
+  avatar           : "/images/head_icon.jpg"
   bio              : "Machine Learning"
   location         : "Beijing, China"
   employer         :
