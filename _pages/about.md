@@ -42,8 +42,8 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 
 
 # 📰 News
+- **2026.07**: Our paper "A Benchmark Dataset for Rat Social and Aggressive Behavior Classification" was published in *Scientific Data*.
 - **2026.03**: Started my internship as a Decision & Planning Intern at Meituan Autonomous Vehicle Department, Beijing.
-- **2026.01**: Our paper "A Benchmark Dataset for Rat Social and Aggressive Behavior Classification" was published in *Scientific Data*.
 - **2025.09**: Started my Master's degree in Artificial Intelligence at Beihang University, Beijing.
 - **2025.07**: Graduated from Jinan University with a Bachelor's degree in Artificial Intelligence.
 
@@ -97,6 +97,12 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 - **Convergence tuning**: Tuned learning rate scaling and warmup strategies alongside data pipelines and micro-batching, achieving a final training loss of **5.826** in reproduction runs.
 - **Deliverables**: Responsible for parallel strategy evaluation, memory/performance analysis, and engineering implementation; project notes and partial experiment logs at: [ASC Student Supercomputer Challenge Proposal](https://github.com/Blossom0913/ASC2022)
 
+# 📝 Publications 
+
+- **Xutian Chen**\*, Guangyu Li\*, Zihan Zhang\*, Mingkun Xu, Zuoren Wang, Qianqian Shi. "[A Benchmark Dataset for Rat Social and Aggressive Behavior Classification](https://doi.org/10.1038/s41597-026-07888-8)." *Scientific Data*, 2026. (\*Co-first authors)
+
+*More manuscripts are in preparation. Feel free to reach out for collaboration opportunities!*
+
 # 🎖 Honors and Awards
 - **2022.06**: 🥈 **National Second Prize** in ASC2022 (Student Supercomputer Challenge), ranked **22nd** among all participants
 - **2022.07**: Attended the ASC final as visitors at USTC
@@ -140,11 +146,5 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 - **Machine Learning**: TensorFlow, PyTorch, Fine-Tuning
 - **Systems**: Linux, Shell
 - **Other**: Algorithm Design, Multi-Agent Systems, Computer Vision, Model Inference & Deployment
-
-# 📝 Publications 
-
-- **Xutian Chen**\*, Guangyu Li\*, Zihan Zhang\*, Mingkun Xu, Zuoren Wang, Qianqian Shi. "[A Benchmark Dataset for Rat Social and Aggressive Behavior Classification](https://doi.org/10.1038/s41597-026-07888-8)." *Scientific Data*, 2026. (\*Co-first authors)
-
-*More manuscripts are in preparation. Feel free to reach out for collaboration opportunities!*
 
 
