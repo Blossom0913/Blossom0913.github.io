@@ -6,7 +6,7 @@ excerpt: ""
 author_profile: true
 ---
 
-# 📝 Blog
+# Blog
 
 <div class="entries-list">
   {% for post in site.posts %}

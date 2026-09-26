@@ -62,3 +62,29 @@
 }
 
 
+
+.masthead__menu-item--lang {
+  display: flex;
+  align-items: center;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-switcher__btn {
+  border: 0;
+  background: transparent;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.lang-switcher__btn.is-active,
+.lang-switcher__btn[aria-pressed="true"] {
+  background: $primary-color;
+  color: #fff;
+}
