@@ -1,25 +1,33 @@
 # main links links
 main:
   - title: "About Me"
+    key: "navAbout"
     url: "/#about-me"
 
   - title: "News"
-    url: "/#-news"
+    key: "navNews"
+    url: "/#news"
 
   - title: "Education"
-    url: "/#-education"
+    key: "navEducation"
+    url: "/#education"
 
   - title: "Experience"
-    url: "/#-experience"
+    key: "navExperience"
+    url: "/#experience"
 
   - title: "Projects"
-    url: "/#-projects"
+    key: "navProjects"
+    url: "/#projects"
 
   - title: "Skills"
-    url: "/#-skills"
+    key: "navSkills"
+    url: "/#skills"
 
   - title: "Blog"
+    key: "navBlog"
     url: "/blog/"
 
   - title: "CV"
+    key: "navCV"
     url: "/resume/简历-陈旭天-北航28届.pdf"
