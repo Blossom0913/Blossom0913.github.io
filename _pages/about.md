@@ -46,7 +46,7 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 
 我的研究兴趣主要包括 **AI for Bio&Chem**、**扩散模型**、**大语言模型推理加速** 和 **自动驾驶路径规划**。我持续关注科研与产业实践中的合适机会，也对生成式 AI 在不同领域中的落地应用充满兴趣。
 
-**导师信息**：在暨南大学本科期间，我有幸在[李德平老师](https://sisse.jnu.edu.cn/2021/0528/c12456a625793/page.htm)指导下开展研究，其方向包括智能视觉感知、三维目标位姿估计、点云处理、视觉基础模型、SLAM 与机器人视觉感知。在北航期间，我有幸接受[赵慧杰教授](https://iai.buaa.edu.cn/info/1013/1032.htm)与人工智能学院[李娜副教授](https://iai.buaa.edu.cn/info/1013/1035.htm)的指导，研究方向涵盖多/高光谱智能感知、多模态感知与数据融合、三维视觉感知与数据处理等。
+**导师信息**：在暨南大学本科期间，我有幸在[李德平老师](https://sisse.jnu.edu.cn/2021/0528/c12456a625793/page.htm)指导下开展研究，其方向包括智能视觉感知、三维目标位姿估计、点云处理、视觉基础模型、SLAM 与机器人视觉感知。在北航期间，我有幸接受[赵慧洁教授](https://iai.buaa.edu.cn/info/1013/1032.htm)与人工智能学院[李娜副教授](https://iai.buaa.edu.cn/info/1013/1035.htm)的指导，研究方向涵盖多/高光谱智能感知、多模态感知与数据融合、三维视觉感知与数据处理等。
 
 **联系方式**：[chenxutian@buaa.edu.cn](mailto:chenxutian@buaa.edu.cn)  
 **GitHub**：[github.com/Blossom0913](https://github.com/Blossom0913)  
@@ -54,10 +54,10 @@ My research interests lie in the intersection of **AI for Bio&Chem**, **Diffusio
 
 <blockquote style="border-left: 4px solid #ccc; padding-left: 15px; font-style: italic; color: #555;">
     <p>
-        阻碍的意义在于检验我们的坚持，它会把真正渴望实现梦想的人与其他人区分开来。
+        Remember brick walls let us show our dedication. They are there to separate us from the people who don't really want to achieve their childhood dreams.
     </p>
     <footer style="font-size: 0.85em; color: #888; text-align: right; margin-top: 10px;">
-        &mdash; Randy Pausch《最后的演讲》
+        &mdash; Randy Pausch's Last Lecture
     </footer>
 </blockquote>
 </div>
